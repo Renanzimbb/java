@@ -1,64 +1,11 @@
+public class Filme extends Titulo{
+    private String diretor;
 
-public class Filme{
-    private String nome;
-    private int anoDeLancamento;
-    private boolean incluidoNoPlano;
-    private double somaDasAvaliacoes;
-    private int totalDeAvaliacoes;
-    private int duracaoEmMinutos;
-
-    
-    public boolean isIncluidoNoPlano() {
-        return incluidoNoPlano;
+    public String getDiretor() {
+        return diretor;
     }
 
-    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
-        this.incluidoNoPlano = incluidoNoPlano;
-    }
-
-    public String nome(){
-        return nome;
-    }     
-
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-
-    public void setDuracaoEmMinutos(int minutos){
-        this.duracaoEmMinutos = minutos;
-    }
-
-    public int getDuracaoEmMinutos(){
-        return duracaoEmMinutos;
-    }
-    
-    public int getTotalDeAvaliacoes(){
-        return totalDeAvaliacoes;
-    }
-
-    public double getSomaDasAvaliacoes(){
-        return somaDasAvaliacoes;
-    }
-    
-    public void setAnoDeLancamento(int ano){
-        this.anoDeLancamento = ano;
-    }
-
-    public int getAnoDeLancamento(){
-        return anoDeLancamento;
-    }
-
-    public void exibeFichaTecnica() {
-        System.out.println("Nome do filme: " + nome);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
-    }
-
-    public void avalia (double nota){
-        somaDasAvaliacoes += nota;
-        totalDeAvaliacoes++;
-    }
-
-    public double pegaMedia(){
-       return somaDasAvaliacoes/ totalDeAvaliacoes;
-    }
+    public void setDiretor(String diretor) {
+        this.diretor = diretor;
+    }  
 }
