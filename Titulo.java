@@ -6,8 +6,12 @@ public class Titulo{
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
-
     
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     public boolean isIncluidoNoPlano() {
         return incluidoNoPlano;
     }
@@ -16,7 +20,7 @@ public class Titulo{
         this.incluidoNoPlano = incluidoNoPlano;
     }
 
-    public String nome(){
+    public String getNome(){
         return nome;
     }     
 
